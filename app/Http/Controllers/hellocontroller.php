@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class hellocontroller extends Controller {
 
-    public function index() {
-        echo 'custom controller hello';
+    public function index($name) {
+        echo 'custom controller hello ' . $name;
     }
 
 }
