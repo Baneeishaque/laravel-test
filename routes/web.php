@@ -15,6 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/hello/{name}', function ($name) {
-    echo "hello form route, dear " . $name;
-});
+Route::get('/hello', 'hellocontroller@index');
