@@ -10,4 +10,8 @@ class hellocontroller extends Controller {
         echo 'custom controller hello ' . $name . ' And Hello to ' . $name2;
     }
 
+    public function add(Request $request) {
+        return view('sum', ['result' => ($request->n1 + $request->n2)]);
+    }
+
 }

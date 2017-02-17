@@ -15,4 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/calc/', function () {
+    return view('calc');
+});
+
 Route::get('/hello/{name}/{name2}/', 'hellocontroller@index');
+
+Route::post('/calc/', 'hellocontroller@add');
