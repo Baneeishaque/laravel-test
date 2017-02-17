@@ -25,3 +25,7 @@ Route::get('/calc/{n1}/{n2}/', 'hellocontroller@calc_function');
 
 Route::post('/calc/', 'hellocontroller@add_function');
 
+Route::get('/multiply/', 'hellocontroller@multiply_display');
+
+Route::post('/multiply/', 'hellocontroller@multiply');
+

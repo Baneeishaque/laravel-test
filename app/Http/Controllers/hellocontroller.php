@@ -14,6 +14,14 @@ class hellocontroller extends Controller {
         return view('calc', ['n1' => $request->n1, 'n2' => $request->n2, 'sum' => ($request->n1 + $request->n2)]);
     }
 
+    public function multiply(Request $request) {
+        return view('result', ['action' => 'Product', 'result' => ($request->n1 * $request->n2)]);
+    }
+
+    public function multiply_display() {
+        return view('multiply');
+    }
+
     public function calc_function($n1, $n2) {
         return view('calc', ['n1' => $n1, 'n2' => $n2, 'sum' => ($n1 + $n2)]);
     }
