@@ -11,11 +11,11 @@ and open the template in the editor.
     </head>
     <body>
         <form method="POST" action="/calc">
-            Number 1 : <input type="text" name="n1" value="" />
+            Number 1 : <input type="text" name="n1" value="{{$n1}}" />
             <br/>
-            Number 2 : <input type="text" name="n2" value="" />
+            Number 2 : <input type="text" name="n2" value="{{$n2}}" />
             <br/>
-            Sum : <input type="text" name="sum" value="" />
+            Sum : <input type="text" name="sum" value="{{$sum}}" />
             <br/>
             <input type="submit" value="+" name="add" />
             {{csrf_field()}}

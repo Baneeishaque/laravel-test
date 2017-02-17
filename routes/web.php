@@ -21,4 +21,7 @@ Route::get('/calc/', function () {
 
 Route::get('/hello/{name}/{name2}/', 'hellocontroller@index');
 
-Route::post('/calc/', 'hellocontroller@add');
+Route::get('/calc/{n1}/{n2}/', 'hellocontroller@calc_function');
+
+Route::post('/calc/', 'hellocontroller@add_function');
+
