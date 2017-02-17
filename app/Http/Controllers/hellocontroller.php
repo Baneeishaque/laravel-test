@@ -22,6 +22,10 @@ class hellocontroller extends Controller {
         return view('multiply');
     }
 
+    public function chat() {
+        return view('chat');
+    }
+
     public function calc_function($n1, $n2) {
         return view('calc', ['n1' => $n1, 'n2' => $n2, 'sum' => ($n1 + $n2)]);
     }

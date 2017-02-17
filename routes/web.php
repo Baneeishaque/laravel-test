@@ -24,6 +24,7 @@ Route::get('/hello/{name}/{name2}/', 'hellocontroller@index');
 Route::get('/calc/{n1}/{n2}/', 'hellocontroller@calc_function');
 
 Route::post('/calc/', 'hellocontroller@add_function');
+Route::get('/chat/', 'hellocontroller@chat');
 
 Route::get('/multiply/', 'hellocontroller@multiply_display');
 
