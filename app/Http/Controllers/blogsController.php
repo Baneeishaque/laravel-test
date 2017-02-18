@@ -16,6 +16,7 @@ class blogsController extends Controller {
     public function save(Request $request) {
         $blog = new blog;
         $blog->title = $request->title;
+        $blog->description = $request->description;
         $blog->content = $request->content;
         $blog->save();
         echo 'Saved Succesfully';

@@ -13,6 +13,7 @@ and open the template in the editor.
         <form action="/blog_addition" method="POST">
             <input type="text" name="title" value="" />
             <input type="text" name="content" value="" />
+            <input type="text" name="description" value="" />
             <input type="submit" value="Submit" />
             {{csrf_field()}}
         </form>
