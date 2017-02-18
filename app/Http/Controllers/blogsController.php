@@ -26,6 +26,12 @@ class blogsController extends Controller {
         return view('blog_addition');
     }
 
+    public function delete($id) {
+        $blog = blog::find($id);
+        $blog->delete();
+        return back();
+    }
+
     public function view() {
         return view('blog_view');
     }

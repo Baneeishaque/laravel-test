@@ -27,6 +27,7 @@ and open the template in the editor.
                     <th>Artilcle ID</th>
                     <th>Artilcle Title</th>
                     <th>Artilcle Content</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -35,6 +36,7 @@ and open the template in the editor.
                     <td>{{ $article->id }}</td>
                     <td>{{ $article->title }}</td>
                     <td>{{ $article->content }}</td>
+                    <td><a href="/blog_delete/{{ $article->id }}">Delete</a></td>
 
                 </tr>
                 @endforeach

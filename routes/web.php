@@ -38,4 +38,7 @@ Route::post('/blog_view/', 'blogsController@viewall');
 
 Route::get('/blog_view_all/', 'blogsController@viewall');
 
+Route::get('/blog_delete/{id}', 'blogsController@delete');
+
 Route::post('/blog_addition/', 'blogsController@save');
+
