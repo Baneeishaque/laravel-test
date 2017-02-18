@@ -36,4 +36,6 @@ Route::get('/blog_view/', 'blogsController@view');
 
 Route::post('/blog_view/', 'blogsController@viewall');
 
+Route::get('/blog_view_all/', 'blogsController@viewall');
+
 Route::post('/blog_addition/', 'blogsController@save');

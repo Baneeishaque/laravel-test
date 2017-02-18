@@ -16,5 +16,6 @@ and open the template in the editor.
             <input type="submit" value="Submit" />
             {{csrf_field()}}
         </form>
+        <a href="/blog_view_all">View</a>
     </body>
 </html>

@@ -15,7 +15,6 @@ and open the template in the editor.
             {{csrf_field()}}
         </form>
         {{$articles}}
-
         @foreach ($articles as $article)
         <p>Article id : {{ $article->id }}</p>
         <p>Article title : {{ $article->title }}</p>
