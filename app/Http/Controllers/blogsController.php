@@ -32,6 +32,20 @@ class blogsController extends Controller {
         return back();
     }
 
+    public function update(Request $request) {
+        $blog = blog::find($request->id);
+        $blog->title = $request->title;
+        $blog->description = $request->description;
+        $blog->content = $request->content;
+        $blog->save();
+        return view('blog_addition');
+    }
+
+    public function edit($id) {
+        $blog = blog::find($id);
+        return view('blog_addition', ['id' => $id, 'title' => $blog->title, 'description' => $blog->description, 'content' => $blog->content]);
+    }
+
     public function view() {
         return view('blog_view');
     }

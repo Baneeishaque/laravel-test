@@ -37,6 +37,7 @@ and open the template in the editor.
                     <td>{{ $article->title }}</td>
                     <td>{{ $article->content }}</td>
                     <td><a href="/blog_delete/{{ $article->id }}">Delete</a></td>
+                    <td><a href="/blog_edit/{{ $article->id }}">Edit</a></td>
 
                 </tr>
                 @endforeach

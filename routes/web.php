@@ -42,3 +42,7 @@ Route::get('/blog_delete/{id}', 'blogsController@delete');
 
 Route::post('/blog_addition/', 'blogsController@save');
 
+Route::post('/blog_update/', 'blogsController@update');
+
+Route::get('/blog_edit/{id}', 'blogsController@edit');
+
