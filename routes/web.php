@@ -32,4 +32,8 @@ Route::post('/multiply/', 'hellocontroller@multiply');
 
 Route::get('/blog_addition/', 'blogsController@index');
 
+Route::get('/blog_view/', 'blogsController@view');
+
+Route::post('/blog_view/', 'blogsController@viewall');
+
 Route::post('/blog_addition/', 'blogsController@save');

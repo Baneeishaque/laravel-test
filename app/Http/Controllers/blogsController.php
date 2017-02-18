@@ -25,4 +25,14 @@ class blogsController extends Controller {
         return view('blog_addition');
     }
 
+    public function view() {
+        return view('blog_view');
+    }
+
+    public function viewall() {
+        $blog = new blog;
+        $articles = $blog->all();
+        return view('blog_view_all', ['articles' => $articles]);
+    }
+
 }
